@@ -1,14 +1,14 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
 
 # Load the model
-clf = pickle.load(open("emp_model.pkl_lr","rb"))
+clf = pickle.load(open("case_study_emp_lr.pkl","rb"))
 
 def predict(data):
-    clf = pickle.load(open("emp_model_lr.pkl","rb"))
-    return clf.predict(data)
+	return clf.predict(data)
 
 
 st.title("Employee Attrition Rate Project using Machine Learning")
